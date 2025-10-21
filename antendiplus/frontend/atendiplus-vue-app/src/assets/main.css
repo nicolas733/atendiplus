@@ -1,0 +1,151 @@
+/* --- Estilo base --- */
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  color: #282828;
+}
+
+.back-button {
+    text-decoration: none; /* remove underline */
+    color: #282828;
+    font-size: 18px;
+    transition: color 0.3s;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+  color: #16c0b0; /* efeito hover */
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+}
+h1 {
+    margin: 10px;
+  font-size: 50px;
+  align-items: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  align-items: flex-start;
+}
+
+li {
+  font-size: 18px;
+}
+
+.button {
+    align-items: center;
+    text-decoration: none; 
+    background-color: #39495c;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 160px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),
+                inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),
+                inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+}
+
+.lock {
+  display: flex;
+  justify-content: right;
+  margin: 0px 20px;
+}
+
+.boton {
+  text-align: left;
+  text-decoration: none; 
+  background-color: #39495c;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 160px;
+  height: 60px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+/* --- Navbar estilo adaptado --- */
+.nav-bar {
+  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar a {
+  text-decoration: none; /* remove underline */
+  color: #282828;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #16c0b0; /* efeito hover */
+}
+
+.table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Responsividade --- */
+@media only screen and (max-width: 600px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .review-form {
+    width: 90%;
+  }
+}
